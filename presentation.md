@@ -4,7 +4,7 @@
 
 NIH, NIDDK, LBG
 *[Travis Hoppe](http://thoppe.github.io/)*, Allen Minton, Di Wu
-[(deck source)](https://github.com/thoppe/research_pres_macrocharge)
+[(deck source)](https://github.com/thoppe/Presentation_NIST_crowding)
 
 ====
 
