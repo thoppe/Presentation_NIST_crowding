@@ -1,0 +1,8 @@
+# Temp files
+
+*~
+\#*
+*.bak
+
+# Render files
+.render_cache/*
