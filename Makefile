@@ -12,6 +12,9 @@ all:
 edit:
 	emacs $(target) &
 
+watch:
+	watch -n 1 make
+
 commit:
 	@-make push
 

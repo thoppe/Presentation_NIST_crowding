@@ -21,14 +21,15 @@ NIH, NIDDK, LBG
 
 ====* !(images/zimmer_crowding.jpg)
 
-# Crowding in the cell
+# <div style="color:white;text-shadow: 2px 2px #000000;"> Crowding in the cell </div>
+====+
 
-!(images/ww_fold.m4v)<<transparent;height:400px>> Folding
-!(images/example_dimer.png)<<transparent;height:400px>> Binding, dimerization 
-!(images/example_linear_agg.png)<<transparent;height:400px>> Aggregation, Fibril formation
+!(images/example_ww.png)<<transparent;height:350px>> Folding
+!(images/example_dimer.png)<<transparent;height:350px>> Binding, dimerization 
+!(images/example_linear_agg.png)<<transparent;height:350px>> Aggregation, Fibril formation
 
 
-&& Image from Harvard University, XVIVO Scientific Animation
+&& <div style="color:white;text-shadow: 2px 2px #000000;"> Background image from Harvard University, XVIVO Scientific Animation</div>
 
 ====
 next
