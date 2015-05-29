@@ -32,4 +32,68 @@ NIH, NIDDK, LBG
 && <div style="color:white;text-shadow: 2px 2px #000000;"> Background image from Harvard University, XVIVO Scientific Animation</div>
 
 ====
-next
+
+# Model outline
+
++ Fiber formation: isodesmic, linear
++ Simple crowding
++ Simple adsoportion
+
+====
+
+# Fiber formation
+
+### $M_1 + M_i \rightleftharpoons M_{i+1}$
+
+## $K_0 = \frac{a_{b,n+1}}{a_{b,n}a_{b,1}}$
+### $K \equiv \frac{c_{b,n+1}}{c_{b,n}c_{b,1}}$
+### $K \equiv \frac{\gamma_{b,n+1}}{\gamma_{b,n} \gamma_{b,1}}$
+## $\ln K = \ln K_0 + \ln \gamma_{b,1} + \ln \gamma_{b,n} + \ln \gamma_{b,n+1}$ 
+
+====
+
+INSERT PICUTE OF SCHEMATIC #1
+
+====
+
+# Scaled particle Theory
+
+INSERT PICTURE OF SPT
+
+Spherocylinder into hard-spheres:
+
+## $\ln \gamma_{b,n} = \ln(1-\phi) + A_1 Z + A_2 Z^2 + A_3 Z^3$
+#### $A_1 = 7+6L_n \hspace{1em} A_2 = 7.5 + 9 L_n \hspace{1em} A_3 = 3 + 4.5 L_n \hspace{1em} Z= \phi (1-\phi)^{-1}$
+
+====
+
+Concentration in the bulk
+## $c_{b,n} = K^{n-1} c^n_{b,1}$
+
+Total concentration
+## $c_{b,T} = \sum_{n=1,\infty} n c_{b,n} = \sum_{n=1,\infty} n K^{n-1}c_{b,1}$
+
+Scale the units such that $c_{b,T}^* = K c_{b,T}$.
+We have that $K_0 c_{b,T}$ is the dimensionaless concetration of tracer in the bulk (absent crowder).
+
+Crowder dependent concentration of each species in the bulk
+##  $\ln c^*_{b,T}(\phi) = \ln$
+ 
+One can now calculate the values of each $c^*_{b,n}$.
+
+====
+
+## Partitioning between bulk and surface
+
+# $ \ln \frac{c_{s,n}^*}{  c_{b,n}^* } = \ln \gamma_{b,n} - \ln \gamma_{s,n} - n \Delta H_{A}/RT + \Delta S_{A,n}/R $ 
+
+====
+
+## Loss of entropy upon adsorption
+# $\Delta S_{A,n} = \ln \Omega^{rot}_{s,n} - \ln {\Omega^{rot}_{b,n}}  $
+
+Free rotation in bulk
+## ${\Omega^{rot}_{b,n}} = 4 \pi (r L_n)^2  $
+
+Free rotation near the surface
+## ${\Omega^{rot}_{s,n}} = {\Omega^{rot}_{b,n}} - 4\pi(r L_n)(r L_n - (Q-1)r)$
