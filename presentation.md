@@ -1,4 +1,4 @@
-### Equilibrium Model for the Combined Effect of Macromolecular Crowding and Surface Adsorption on the Formation of Linear Protein Fibrils
+## The cumulative effect of macromolecular crowding and surface adsorption on protein fibrillation
 
 ----------
 
@@ -21,38 +21,57 @@ NIH, NIDDK, LBG
 
 ====* !(images/zimmer_crowding.jpg)
 
-# <div style="color:white;text-shadow: 2px 2px #000000;"> Crowding in the cell </div>
+## <div style="color:white;text-shadow: 2px 2px #000000;">Biochemistry in a crowded enviorment</div>
 ====+
 
-!(images/example_ww.png)<<transparent;height:350px>> Folding
-!(images/example_dimer.png)<<transparent;height:350px>> Binding, dimerization 
-!(images/example_linear_agg.png)<<transparent;height:350px>> Aggregation, Fibril formation
-
-
+!(images/example_ww.png)<<transparent;height:350px>>
+!(images/example_dimer.png)<<transparent;height:350px>> 
+!(images/example_linear_agg.png)<<transparent;height:350px>> 
 && <div style="color:white;text-shadow: 2px 2px #000000;"> Background image from Harvard University, XVIVO Scientific Animation</div>
+
+====*
+
+## Biochemistry in a crowded enviorment
+## (as an analyitical model)
+
++ What are the dominant interactions?
++ What length scales are important?
++ Dynamic or equilibrium? 
 
 ====
 
 # Model outline
+### (restricted subset )
 
-+ Fiber formation: isodesmic, linear
-+ Simple crowding
++ Fiber formation: isodesmic & linear
++ Dilute macromoleule concentration
++ Steric crowding interactions
 + Simple adsoportion
++ Thermodynamic equilibrium
 
 ====
 
-# Fiber formation
+## Schematic outline
+!(images/biophys_fig1.png) <<height:600px>>
+
+====
+
+
+## Partitioning between bulk and surface
+
+# $ \ln \frac{c_{s,n}}{  c_{b,n} } = \ln \gamma_{b,n} - \ln \gamma_{s,n} - n \Delta H_{A}/RT + \Delta S_{A,n}/R $ 
+
+&& $c$ concentration, $a$ thermodynamic activity, $\gamma$ thermodynamic activity coefficient, $K$ equilibrium constant, <br> $\Delta H$ change in enthalpy during adsorption, $\Delta S$ change in entropy upon adsorption.   
+
+====
+## Isodesmic fiber formation
 
 ### $M_1 + M_i \rightleftharpoons M_{i+1}$
 
 ## $K_0 = \frac{a_{b,n+1}}{a_{b,n}a_{b,1}}$
-### $K \equiv \frac{c_{b,n+1}}{c_{b,n}c_{b,1}}$
-### $K \equiv \frac{\gamma_{b,n+1}}{\gamma_{b,n} \gamma_{b,1}}$
+## $K \equiv \frac{c_{b,n+1}}{c_{b,n}c_{b,1}} \hspace{1em} K \equiv K_0 \frac{\gamma_{b,n+1}}{\gamma_{b,n} \gamma_{b,1}}$
+
 ## $\ln K = \ln K_0 + \ln \gamma_{b,1} + \ln \gamma_{b,n} + \ln \gamma_{b,n+1}$ 
-
-====
-
-INSERT PICUTE OF SCHEMATIC #1
 
 ====
 
@@ -83,17 +102,53 @@ One can now calculate the values of each $c^*_{b,n}$.
 
 ====
 
-## Partitioning between bulk and surface
-
-# $ \ln \frac{c_{s,n}^*}{  c_{b,n}^* } = \ln \gamma_{b,n} - \ln \gamma_{s,n} - n \Delta H_{A}/RT + \Delta S_{A,n}/R $ 
-
-====
 
 ## Loss of entropy upon adsorption
-# $\Delta S_{A,n} = \ln \Omega^{rot}_{s,n} - \ln {\Omega^{rot}_{b,n}}  $
+## $\Delta S_{A,n} = \ln \Omega^{rot}_{s,n} - \ln {\Omega^{rot}_{b,n}}  $
 
 Free rotation in bulk
 ## ${\Omega^{rot}_{b,n}} = 4 \pi (r L_n)^2  $
 
 Free rotation near the surface
 ## ${\Omega^{rot}_{s,n}} = {\Omega^{rot}_{b,n}} - 4\pi(r L_n)(r L_n - (Q-1)r)$
+
+====
+
+## Activity coefficent 
+#### _two-body approximation*_
+
+Activity coefficients depend only on excluded volume
+# $ \ln \gamma_{b,n} = V_{b,n} \rho_C; \hspace{1em} \ln \gamma_{s,n} = V_{s,n} \rho_C$
+## $ \ln\gamma_{s,n}(\phi) = R_v \ln \gamma_{b,n}(\phi) \hspace {1em} R_v = \frac{V_{s,nC} }{V_{b,nC}}$  
+
+&& $\rho_C$ denotes number density of crowders. *Sear, _Phys. Rev. E. (1998)_  
+
+====
+
+#### _two-body approximation_
+!(images/biophys_fig2.png) <<height:650px>>
+Note that $R_v \approx 0.5$ for all $n$ when $Q \approx 1$.
+
+====
+
+## Activity coefficent 
+#### _multi-body approximation_
+
+### $g(r)$ is not constant near the surface
+### $g(r)$ dependent on oligmer too
+
+### Use MC calculations to estimate $R_v(\phi)$
+
+====*
+
+## Widom sampling
+For a dilute species of oligimers
+### $\gamma_{x,n}(\phi) = 1/P_{x,n}(\phi)$
+!(images/biophys_fig3.png) <<height:500px; transparent>> computationally sampling the ratio of insert probabilites <br> (monomers, dimers, trimers, and tetramers from black to red)
+
+====*
+
+## Linear dependence of $R_v$ on $\phi$
+## $R_v(\phi) = 1 + \ln \left.\left( \frac{P_{b,n}(\phi)}{P_{s,n}(\phi)} \right) \right/  \ln \gamma_{b,n}(\phi)$ 
+!(images/biophys_fig4.png) <<height:500px; transparent>> 
+
