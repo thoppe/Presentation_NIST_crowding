@@ -21,8 +21,8 @@ NIH, NIDDK, LBG
 
 ====* !(images/zimmer_crowding.jpg)
 
-## <div style="color:white;text-shadow: 2px 2px #000000;">Biochemistry in a crowded enviorment</div>
-====+
+## <div style="color:white;text-shadow: 2px 2px #000000;">Biochemistry in a <br>crowded environment</div>
+
 
 !(images/example_ww.png)<<transparent;height:350px>>
 !(images/example_dimer.png)<<transparent;height:350px>> 
@@ -31,22 +31,39 @@ NIH, NIDDK, LBG
 
 ====*
 
-## Biochemistry in a crowded enviorment
-## (as an analyitical model)
+## Biochemistry in a <br>crowded environment
+_(as an analytical model)_
+
+
 
 + What are the dominant interactions?
 + What length scales are important?
 + Dynamic or equilibrium? 
++ Experimental scope?
 
 ====
 
-# Model outline
-### (restricted subset )
+## What is crowding?
 
-+ Fiber formation: isodesmic & linear
-+ Dilute macromoleule concentration
+!(images/example_crowding.png)<<height:500px>> Non-specific interactions change the interactions with the free volume.
+
+SHOW REFERENCE TO MINTON REVIEW HERE.
+
+====*
+
+INSERT EXPERIEMENTAL EVIDENCE HERE.
+
+====
+
+## Model outline
+_restrict the domain_
+
+
++ Fiber formation is isodesmic & linear
++ Dilute macromolecular concentration
 + Steric crowding interactions
-+ Simple adsoportion
++ Spherical and spherocylinder geometries
++ Linear, isotropic adsorption
 + Thermodynamic equilibrium
 
 ====
@@ -56,12 +73,12 @@ NIH, NIDDK, LBG
 
 ====
 
-
-## Partitioning between bulk and surface
+## Partitioning between 
+## bulk and surface compartments
 
 # $ \ln \frac{c_{s,n}}{  c_{b,n} } = \ln \gamma_{b,n} - \ln \gamma_{s,n} - n \Delta H_{A}/RT + \Delta S_{A,n}/R $ 
 
-&& $c$ concentration, $a$ thermodynamic activity, $\gamma$ thermodynamic activity coefficient, $K$ equilibrium constant, <br> $\Delta H$ change in enthalpy during adsorption, $\Delta S$ change in entropy upon adsorption.   
+&& $c$ concentration, $a$ thermodynamic activity, $\gamma$ thermodynamic activity coefficient, $K$ equilibrium constant, <br> $\Delta H$ change in enthalpy during adsorption per monomer, and $\Delta S$ change in entropy upon adsorption.   
 
 ====
 ## Isodesmic fiber formation
@@ -75,14 +92,14 @@ NIH, NIDDK, LBG
 
 ====
 
-# Scaled particle Theory
-
-INSERT PICTURE OF SPT
+## Scaled particle Theory
 
 Spherocylinder into hard-spheres:
-
 ## $\ln \gamma_{b,n} = \ln(1-\phi) + A_1 Z + A_2 Z^2 + A_3 Z^3$
 #### $A_1 = 7+6L_n \hspace{1em} A_2 = 7.5 + 9 L_n \hspace{1em} A_3 = 3 + 4.5 L_n \hspace{1em} Z= \phi (1-\phi)^{-1}$
+
+
+&& Insert reference to Lebowitz
 
 ====
 
@@ -92,11 +109,10 @@ Concentration in the bulk
 Total concentration
 ## $c_{b,T} = \sum_{n=1,\infty} n c_{b,n} = \sum_{n=1,\infty} n K^{n-1}c_{b,1}$
 
-Scale the units such that $c_{b,T}^* = K c_{b,T}$.
-We have that $K_0 c_{b,T}$ is the dimensionaless concetration of tracer in the bulk (absent crowder).
+Scale the units such that $c_{b,T}^* = K c_{b,T}$ and $K_0 c_{b,T}$ is the dimensionless concentration of tracer in the bulk (absent crowder).
 
 Crowder dependent concentration of each species in the bulk
-##  $\ln c^*_{b,T}(\phi) = \ln$
+###  $\ln c^*_{b,T}(\phi) = \ln$
  
 One can now calculate the values of each $c^*_{b,n}$.
 
@@ -114,7 +130,7 @@ Free rotation near the surface
 
 ====
 
-## Activity coefficent 
+## Activity coefficient 
 #### _two-body approximation*_
 
 Activity coefficients depend only on excluded volume
@@ -131,7 +147,7 @@ Note that $R_v \approx 0.5$ for all $n$ when $Q \approx 1$.
 
 ====
 
-## Activity coefficent 
+## Activity coefficient 
 #### _multi-body approximation_
 
 ### $g(r)$ is not constant near the surface
@@ -144,7 +160,7 @@ Note that $R_v \approx 0.5$ for all $n$ when $Q \approx 1$.
 ## Widom sampling
 For a dilute species of oligimers
 ### $\gamma_{x,n}(\phi) = 1/P_{x,n}(\phi)$
-!(images/biophys_fig3.png) <<height:500px; transparent>> computationally sampling the ratio of insert probabilites <br> (monomers, dimers, trimers, and tetramers from black to red)
+!(images/biophys_fig3.png) <<height:500px; transparent>> computationally sampling the ratio of insert probabilities <br> (monomers, dimers, trimers, and tetramers from black to red)
 
 ====*
 
