@@ -34,8 +34,9 @@ NIH, NIDDK, LBG
 ## Biochemistry in a <br>crowded environment
 _(as an analytical model)_
 
-
-
+*Background interactions:* Weak, nonspecific interactions between macromolecular species and local constituents. Does not depends on detailed structe of interaction but only on **gross physical properties** like size, shape, hydophobicity, net charge, dipole moment, ...
+====+
+-----------------------
 + What are the dominant interactions?
 + What length scales are important?
 + Dynamic or equilibrium? 
@@ -44,15 +45,33 @@ _(as an analytical model)_
 ====
 
 ## What is crowding?
+_(usually) repulsive nonspecific interactions with other soluble macromolecules_
+!(images/example_crowding.png)<<height:500px>> The relative free volume decreases when inserting a larger macromole into the same solution of hard-spheres.
 
-!(images/example_crowding.png)<<height:500px>> Non-specific interactions change the interactions with the free volume.
 
-SHOW REFERENCE TO MINTON REVIEW HERE.
+&& [Annual Review of Biophysics (Vol. 37: 375-397) 2008, Zhou, Rivas & Minton](http://www.annualreviews.org/doi/abs/10.1146/annurev.biophys.37.032807.125817)
 
 ====*
 
-INSERT EXPERIEMENTAL EVIDENCE HERE.
+### Experimental Evidence
+Direct observation of the enhancement of noncooperative protein 
+self-assembly by macromolecular crowding$^\dagger$
 
+!(images/rivas_large2.jpg) <<height:400px;transparent>> Addition of Hb enchances fiber formation of FtsZ
+!(images/crowding_binding_sch.jpeg) <<height:350px;transparent>>
+
+
+&& $^\dagger$[PNAS Vol. 98(6), Rivas, Fernandez, Minton](http://www.pnas.org/content/98/6/3150.short)
+====*
+### Experimental Evidence
+Macromolecular Crowding Accelerates Amyloid Formation
+of apoC-II as a function of dextran T10 conc.$^\dagger$
+
+!(images/hatters_F2.large.jpg) <<height:300px;transparent>> Turbidity
+!(images/hatters_F3.large.jpg) <<height:300px;transparent>> Non-aggregated protein
+!(images/hatters_F5.large.jpg) <<height:300px;transparent>> Thioflavin-T binding
+
+&& $^\dagger$[JBC 277(7824-7830), Hatters, Minton, Howlett](http://www.jbc.org/content/277/10/7824.short)
 ====
 
 ## Model outline
@@ -118,32 +137,30 @@ One can now calculate the values of each $c^*_{b,n}$.
 
 ====
 
-
-## Loss of entropy upon adsorption
-## $\Delta S_{A,n} = \ln \Omega^{rot}_{s,n} - \ln {\Omega^{rot}_{b,n}}  $
+### Loss of entropy upon adsorption
+### $\Delta S_{A,n} = \ln \Omega^{r}_{s,n} - \ln {\Omega^{r}_{b,n}}  $
 
 Free rotation in bulk
-## ${\Omega^{rot}_{b,n}} = 4 \pi (r L_n)^2  $
+### ${\Omega^{r}_{b,n}} = 4 \pi (r L_n)^2  $
 
 Free rotation near the surface
-## ${\Omega^{rot}_{s,n}} = {\Omega^{rot}_{b,n}} - 4\pi(r L_n)(r L_n - (Q-1)r)$
+### ${\Omega^{r}_{s,n}} = {\Omega^{r}_{b,n}} - 4\pi(r L_n)(r L_n - (Q-1)r)$
 
 ====
 
 ## Activity coefficient 
-#### _two-body approximation*_
+#### _two-body approximation_ $^\dagger$
 
 Activity coefficients depend only on excluded volume
-# $ \ln \gamma_{b,n} = V_{b,n} \rho_C; \hspace{1em} \ln \gamma_{s,n} = V_{s,n} \rho_C$
+### $ \ln \gamma_{b,n} = V_{b,n} \rho_C; \hspace{1em} \ln \gamma_{s,n} = V_{s,n} \rho_C$
 ## $ \ln\gamma_{s,n}(\phi) = R_v \ln \gamma_{b,n}(\phi) \hspace {1em} R_v = \frac{V_{s,nC} }{V_{b,nC}}$  
 
-&& $\rho_C$ denotes number density of crowders. *Sear, _Phys. Rev. E. (1998)_  
+&& $\rho_C$ denotes number density of crowders. $^\dagger$ [Sear Phys. Rev. E. (1998)](http://journals.aps.org/pre/abstract/10.1103/PhysRevE.57.1983)
 
 ====
 
 #### _two-body approximation_
-!(images/biophys_fig2.png) <<height:650px>>
-Note that $R_v \approx 0.5$ for all $n$ when $Q \approx 1$.
+!(images/biophys_fig2.png) <<height:650px>> $R_v \approx 0.5$ for all $n$ when $Q \approx 1$.
 
 ====
 
@@ -157,14 +174,14 @@ Note that $R_v \approx 0.5$ for all $n$ when $Q \approx 1$.
 
 ====*
 
-## Widom sampling
+### Widom sampling
 For a dilute species of oligimers
-### $\gamma_{x,n}(\phi) = 1/P_{x,n}(\phi)$
+#### $\gamma_{x,n}(\phi) = 1/P_{x,n}(\phi)$
 !(images/biophys_fig3.png) <<height:500px; transparent>> computationally sampling the ratio of insert probabilities <br> (monomers, dimers, trimers, and tetramers from black to red)
 
 ====*
 
-## Linear dependence of $R_v$ on $\phi$
+### Linear dependence of $R_v$ on $\phi$
 ## $R_v(\phi) = 1 + \ln \left.\left( \frac{P_{b,n}(\phi)}{P_{s,n}(\phi)} \right) \right/  \ln \gamma_{b,n}(\phi)$ 
 !(images/biophys_fig4.png) <<height:500px; transparent>> 
 
