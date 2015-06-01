@@ -1,4 +1,4 @@
-### [Equilibrium Model for the Combined Effect of Macromolecular Crowding and Surface Adsorption on the Formation of Linear Protein Fibrils](http://thoppe.github.io/Presentation_NIST_crowding/)
+### [The cumulative effect of macromolecular crowding and surface adsorption on protein fibrillation](http://thoppe.github.io/Presentation_NIST_crowding/)
 
 #### Travis Hoppe, Allen P. Minton
 
