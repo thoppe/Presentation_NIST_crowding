@@ -67,7 +67,7 @@ self-assembly by macromolecular crowding$^\dagger$
 ====*
 ### Experimental Evidence
 Macromolecular Crowding Accelerates Amyloid Formation
-of apoC-II as a function of Dextran T10 conc.$^\dagger$
+of apoC-II as a function of Dextran T10 concentration$^\dagger$
 
 !(images/hatters_F2.large.jpg) <<height:300px;transparent>> Turbidity
 !(images/hatters_F3.large.jpg) <<height:300px;transparent>> Non-aggregated protein
