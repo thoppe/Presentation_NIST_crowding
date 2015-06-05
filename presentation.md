@@ -97,7 +97,7 @@ _restrict the domain_
 + Linear, isotropic adsorption
 + Thermodynamic equilibrium
 
-====
+====*
 
 ## Model schematic
 !(images/biophys_fig1.png) <<height:600px; transparent>> Adsorption only happens over a narrow volume near the surface.
@@ -126,16 +126,27 @@ _restrict the domain_
 ## Scaled particle Theory
 
 Thermodynamic cost of cavity formation$^\dagger$
+## $\mu = kT \ln \rho \Lambda^3 + kT \rho \int_{0}^{a} 4 \pi \lambda^2 G(\lambda) d \lambda $
+<div style="font-size:60%">equivalently the cost of inserting a solute molecule of radius a into the solvent of radius b.</div>
+
+Hard-sphere case: Integrand can be evaluated exactly for close distances, 
+and approximated with the Percus-Yevick closure 
+of the Orstein-Zernike equation. 
+
+
+&& $\rho G(\lambda)$ is the average density of solvent molecules in contact with the solvent, $\Lambda=h^3/(2\pi m k T)^{2/3}$ <br> $^\dagger$[Reiss, Frisch, and Lebowitz, J. Chem. Phys. 31, 369 (1959)](http://scitation.aip.org/content/aip/journal/jcp/31/2/10.1063/1.1730361)
+
+====*
+
+## Scaled particle Theory
+Can be extended to non-spherical geometries:
 
 Sphereocylinder into hard-spheres
 ### $\ln \gamma_{b,n} = \ln(1-\phi) + A_1 Z + A_2 Z^2 + A_3 Z^3$
 
 #### $A_1 = 7+6L_n \hspace{1em} A_2 = 7.5 + 9 L_n \hspace{1em} A_3 = 3 + 4.5 L_n \hspace{1em} Z= \phi (1-\phi)^{-1}$
 
-
-&&  $^\dagger$[Lebowitz, et al. JCP (1959) Vol. 31](http://scitation.aip.org/content/aip/journal/jcp/43/3/10.1063/1.1696842)
-
-====*
+=====*
 
 ## Bulk concentrations
 
@@ -173,25 +184,55 @@ Activity coefficients depend only on excluded volume
 ### $ \ln \gamma_{b,n} = V_{b,n} \rho_C; \hspace{1em} \ln \gamma_{s,n} = V_{s,n} \rho_C$
 ## $ \ln\gamma_{s,n}(\phi) = R_v \ln \gamma_{b,n}(\phi) \hspace {1em} R_v = \frac{V_{s,n C} }{V_{b,n C}}$  
 
-&& $\rho_C$ denotes number density of crowders. $^\dagger$ [Sear Phys. Rev. E. (1998)](http://journals.aps.org/pre/abstract/10.1103/PhysRevE.57.1983)
+&& $\rho_C$ denotes number density of crowders. $^\dagger$ [Sear, Phys. Rev. E. (1998)](http://journals.aps.org/pre/abstract/10.1103/PhysRevE.57.1983)
 
-====
+====*
 
 #### _two-body approximation_
 !(images/biophys_fig2.png) <<height:650px>> $R_v \approx 0.5$ for all $n$ when $Q \approx 1$.
 
 ====
+## Activity coefficient 
+#### _multi-body approximation_
+$g(r)$ is not constant near the surface (boundary effects)
+$g(r)$ dependent on oligomer too (solute effects)
+Effects can be real and measurable!
+!(images/s2.png) <<height:400px>> Interaction of charged colloidal spheres near a charged wall$\dagger$
+!(images/s1.png) <<height:400px>> Radial distribution function and PMF
+
+&& $\dagger$ [Behrens, Grier, Phys Rev E. 2001, 64(5)](http://www.ncbi.nlm.nih.gov/pubmed/11735883)
+====*
 
 ## Activity coefficient 
 #### _multi-body approximation_
 
-### $g(r)$ is not constant near the surface
-### $g(r)$ dependent on oligomer too
+### Use Monte-Carlo to estimate $R_v(\phi)$
 
-### Use MC calculations to estimate $R_v(\phi)$
+Sample conformational states of hard-spheres near a boundary.
+
+Two approaches to improve sampling, DMD (Discrete molecular dynamics) and particle displacement.
+
+
+====
+## Widom sampling
+
+## $\mu = \frac{\partial \mathcal{F}}{\partial N}_{V,T} = -\frac{1}{\beta} \ln({\mathcal{Z}_{N+1}/\mathcal{Z}_N}) $
+====+
+## $-\beta \mu = \ln \left( \frac{V/\Lambda^d}{N+1}  \right ) + \ln \left ( \frac{\int \exp [-\beta U(\mathbf{x}^{N+1})] \mathrm{d}\mathbf{x}^{N+1}}{\int \exp [-\beta U(\mathbf{x}^{N})] \mathrm{d}\mathbf{x}^{N}} \right ) $
+##### $\mu = \mu_\text{ideal} + \mu_\text{excess}$
+
+Sample over "test" particle:
+## $-\beta \mu_\text{excess} \approx \ln \int \left < \exp [-\beta \Delta U] \right >_N d\mathbf{x}^{N+1}$
+### $\Delta U = U(\mathbf{x}^{N+1}) - U(\mathbf{x}^{N})$
+
+
+% \int \exp [-\beta U(\mathbf{x}^{N+1})] d\mathbf{x}^{N+1}
+% \int \exp [-\beta U(\mathbf{x}^{N})] \mathrm{d}\mathbf{x}^{N}
+%\mu_\text{ideal} + \mu_\text{excess} = -kT \ln({\mathcal{Z}_{N+1}/\mathcal{Z}_N}) -$
+
+
 
 ====*
-
 ### Widom sampling
 For a dilute species of oligomers
 #### $\gamma_{x,n}(\phi) = 1/P_{x,n}(\phi)$
@@ -231,7 +272,7 @@ crowding can act as a _sensitive form of biochemical regulation_.
 ====
 
 # Thanks, you.
-====+
+
 <br>
 
 Laboratory of Biochemistry and Genetics
