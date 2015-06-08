@@ -105,25 +105,29 @@ _restrict the domain_
 ====
 
 ## Partitioning between 
-## bulk and surface compartments
+## bulk (b) and surface (s) compartments
 
-# $ \ln \frac{c_{s,n}}{  c_{b,n} } = \ln \gamma_{b,n} - \ln \gamma_{s,n} - n \Delta H_{A}/RT + \Delta S_{A,n}/R $ 
+# $ \ln \left ( \frac{c_{s,n}}{  c_{b,n} } \right ) = \ln \left ( \frac {\gamma_{b,n}}{\gamma_{s,n}} \right ) - n \Delta H_{A}/RT + \Delta S_{A,n}/R $ 
+Three terms: change of chemical potential & enthalpy/entropy of absorption
 
-&& $c$ concentration, $a$ thermodynamic activity, $\gamma$ thermodynamic activity coefficient, $K$ equilibrium constant, <br> $\Delta H$ change in enthalpy during adsorption per monomer, and $\Delta S$ change in entropy upon adsorption.   
+
+&& $c$ concentration, $\gamma$ thermodynamic activity coefficient, $K$ equilibrium constant, <br> $\Delta H_A$ change in enthalpy during adsorption per monomer, and $\Delta S_A$ change in entropy upon adsorption.   
 
 ====*
 
 ## Isodesmic fiber formation
-#### $M_1 + M_i \rightleftharpoons M_{i+1}$
+!(images/isodesmic_example.png) <<transparent>> cost of fibrillation independent of length
+## $M_1 + M_i \rightleftharpoons^K M_{i+1} \hspace{2em} K_0 = \frac{a_{b,n+1}}{a_{b,n}a_{b,1}} $
 
-## $K_0 = \frac{a_{b,n+1}}{a_{b,n}a_{b,1}}$
-## $K \equiv \frac{c_{b,n+1}}{c_{b,n}c_{b,1}} \hspace{1em} K \equiv K_0 \frac{\gamma_{b,n+1}}{\gamma_{b,n} \gamma_{b,1}}$
+## $K \equiv \frac{c_{b,n+1}}{c_{b,n}c_{b,1}} = K_0 \frac{\gamma_{b,n+1}}{\gamma_{b,n} \gamma_{b,1}}$
+%## $\ln K = \ln K_0 + \ln \gamma_{b,1} + \ln \gamma_{b,n} + \ln \gamma_{b,n+1}$ 
 
-## $\ln K = \ln K_0 + \ln \gamma_{b,1} + \ln \gamma_{b,n} + \ln \gamma_{b,n+1}$ 
+
+&& $a$ thermodynamic activity, $\gamma$ thermodynamic activity coefficient, $K$ equilibrium constant, <br> $\Delta H_A$ change in enthalpy during adsorption per monomer, and $\Delta S_A$ change in entropy upon adsorption.   
 
 ====*
 
-## Scaled particle Theory
+## Scaled particle theory
 
 Thermodynamic cost of cavity formation$^\dagger$
 ## $\mu = kT \ln \rho \Lambda^3 + kT \rho \int_{0}^{a} 4 \pi \lambda^2 G(\lambda) d \lambda $
@@ -138,42 +142,39 @@ of the Orstein-Zernike equation.
 
 ====*
 
-## Scaled particle Theory
+## Scaled particle theory
 Can be extended to non-spherical geometries:
 
 Sphereocylinder into hard-spheres
 ### $\ln \gamma_{b,n} = \ln(1-\phi) + A_1 Z + A_2 Z^2 + A_3 Z^3$
-
 #### $A_1 = 7+6L_n \hspace{1em} A_2 = 7.5 + 9 L_n \hspace{1em} A_3 = 3 + 4.5 L_n \hspace{1em} Z= \phi (1-\phi)^{-1}$
 
-=====*
 
-## Bulk concentrations
+&& $\phi$ is the packing fraction of the crowders, $L_n$ is the length of the macromolecule.
 
-Concentration per length; Total concentration
-### $c_{b,n} = K^{n-1} c^n_{b,1}; \hspace{2em} c_{b,T} = \sum_{n=1,\infty} n c_{b,n} = \sum_{n=1,\infty} n K^{n-1}c_{b,1}$
-
-Scale the units such that $c_{b,T}^* = K c_{b,T}$ then $c^{*,0}_{b,T}=K_0 c_{b,T}$ is the dimensionless concentration of tracer in the bulk (absent crowder). Crowder dependent concentration of each species in the bulk:
-###  $\ln c^*_{b,T}(\phi) = \ln c^{*,0}_{b,T} + \ln (1-\phi) +3 Z + 1.5Z^2 $
- 
-One can now calculate the values of each $c^*_{b,n}$.
-
+%=====*
+%## Bulk concentrations
+%Concentration per length; Total concentration
+%### $c_{b,n} = K^{n-1} c^n_{b,1}; \hspace{2em} c_{b,T} = \sum_{n=1,\infty} n c_{b,n} = \sum_{n=1,\infty} n K^{n-1}c_{b,1}$
+%Scale the units such that $c_{b,T}^* = K c_{b,T}$ then $c^{*,0}_{b,T}=K_0 c_{b,T}$ is the dimensionless concentration of tracer in the bulk (absent crowder). Crowder dependent concentration of each species in the bulk:
+%###  $\ln c^*_{b,T}(\phi) = \ln c^{*,0}_{b,T} + \ln (1-\phi) +3 Z + 1.5Z^2 $
+% One can now calculate the values of each $c^*_{b,n}$.
 ====
 
-## Activity coefficient 
-
-Estimate the entropic and enthalpic costs of adsorption
-
+## Adsorption
+!(images/biophys_fig2.png) <<height:650px;transparent>> Estimate the entropic & enthalpic cost of adsorption
 ====*
 
 ### Loss of entropy upon adsorption
-### $\Delta S_{A,n} = \ln \Omega^{r}_{s,n} - \ln {\Omega^{r}_{b,n}}  $
+### $\Delta S_{A,n} = \ln \Omega^{R}_{s,n} - \ln {\Omega^{R}_{b,n}}  $
 
 Free rotation in bulk
-### ${\Omega^{r}_{b,n}} = 4 \pi (r L_n)^2  $
+### ${\Omega^{R}_{b,n}} = 4 \pi (r L_n)^2  $
 
 Free rotation near the surface
-### ${\Omega^{r}_{s,n}} = {\Omega^{r}_{b,n}} - 4\pi(r L_n)(r L_n - (Q-1)r)$
+### ${\Omega^{R}_{s,n}} = {\Omega^{R}_{b,n}} - 4\pi(r L_n)(r L_n - (Q-1)r)$
+
+&& $\Omega^{R}_{x,n}$ rotational states available to bulk/surface solute of length n. <br> $2r Q$ is the width of the bounding surface.
 
 ====*
 
@@ -181,15 +182,15 @@ Free rotation near the surface
 #### _two-body approximation_ $^\dagger$
 
 Activity coefficients depend only on excluded volume
-### $ \ln \gamma_{b,n} = V_{b,n} \rho_C; \hspace{1em} \ln \gamma_{s,n} = V_{s,n} \rho_C$
-## $ \ln\gamma_{s,n}(\phi) = R_v \ln \gamma_{b,n}(\phi) \hspace {1em} R_v = \frac{V_{s,n C} }{V_{b,n C}}$  
+%### $ \ln \gamma_{b,n} = V_{b,n} \rho_C; \hspace{1em} \ln \gamma_{s,n} = V_{s,n} \rho_C$
+# $ \ln\gamma_{s,n}(\phi) = R_v \ln \gamma_{b,n}(\phi) \hspace {1.5em} R_v = \frac{V_{s,n C} }{V_{b,n C}}$  
 
-&& $\rho_C$ denotes number density of crowders. $^\dagger$ [Sear, Phys. Rev. E. (1998)](http://journals.aps.org/pre/abstract/10.1103/PhysRevE.57.1983)
+&& $^\dagger$ [Sear, Phys. Rev. E. (1998)](http://journals.aps.org/pre/abstract/10.1103/PhysRevE.57.1983)
 
 ====*
 
-#### _two-body approximation_
-!(images/biophys_fig2.png) <<height:650px>> $R_v \approx 0.5$ for all $n$ when $Q \approx 1$.
+## Activity coefficient     
+!(images/biophys_fig2.png) <<height:650px; transparent>> _two-body approximation_ $R_v \approx 0.5$ for all $n$ when $Q \approx 1$.
 
 ====
 ## Activity coefficient 
@@ -206,7 +207,8 @@ Effects can be real and measurable!
 ## Activity coefficient 
 #### _multi-body approximation_
 
-### Use Monte-Carlo to estimate $R_v(\phi)$
+Use Monte-Carlo to estimate $R_v(\phi)$, i.e. the 
+dependence of crowding concentration.
 
 Sample conformational states of hard-spheres near a boundary.
 
@@ -215,27 +217,18 @@ Two approaches to improve sampling, DMD (Discrete molecular dynamics) and partic
 
 ====
 ## Widom sampling
-
 ## $\mu = \frac{\partial \mathcal{F}}{\partial N}_{V,T} = -\frac{1}{\beta} \ln({\mathcal{Z}_{N+1}/\mathcal{Z}_N}) $
 ====+
 ## $-\beta \mu = \ln \left( \frac{V/\Lambda^d}{N+1}  \right ) + \ln \left ( \frac{\int \exp [-\beta U(\mathbf{x}^{N+1})] \mathrm{d}\mathbf{x}^{N+1}}{\int \exp [-\beta U(\mathbf{x}^{N})] \mathrm{d}\mathbf{x}^{N}} \right ) $
-##### $\mu = \mu_\text{ideal} + \mu_\text{excess}$
 
-Sample over "test" particle:
+Split into $\mu = \mu_\text{ideal} + \mu_\text{excess}$, sample over "test" particle:
 ## $-\beta \mu_\text{excess} \approx \ln \int \left < \exp [-\beta \Delta U] \right >_N d\mathbf{x}^{N+1}$
 ### $\Delta U = U(\mathbf{x}^{N+1}) - U(\mathbf{x}^{N})$
-
-
-% \int \exp [-\beta U(\mathbf{x}^{N+1})] d\mathbf{x}^{N+1}
-% \int \exp [-\beta U(\mathbf{x}^{N})] \mathrm{d}\mathbf{x}^{N}
-%\mu_\text{ideal} + \mu_\text{excess} = -kT \ln({\mathcal{Z}_{N+1}/\mathcal{Z}_N}) -$
-
-
-
+&& $\mu$ is the chemical potential, $\mathcal{F}$ is the free-energy, and $\mathcal{Z}_{N}$ is the partition function with $N$ solute molecules.
 ====*
-### Widom sampling
-For a dilute species of oligomers
-#### $\gamma_{x,n}(\phi) = 1/P_{x,n}(\phi)$
+### Widom sampling (hard-spheres)
+For hard-potentials $\exp [-\beta \Delta U] \in \{0,1\}$ and $\left < \exp [-\beta \Delta U] \right >_N = P_{x,N}(\phi)$.
+#### $\gamma_{x,N}(\phi) = 1/P_{x,N}(\phi)$
 !(images/biophys_fig3.png) <<height:500px; transparent>> computationally sampling the ratio of insert probabilities <br> (monomers, dimers, trimers, and tetramers from black to red)
 
 ====*
@@ -258,10 +251,10 @@ growth on the surface ... even in the absence of surface attraction!
 ====*
 
 ## Qualitative predictions
+Model predicts a critical "falling-out" of fiber growth in the solution at moderate, neutral and even repulsive surfaces.
+
 Location of critical phenomena and extent of cooperatively is 
 _sensitive to details of the model_ (adsorption/association).
-====+
-<br>
 
 ## Biological relevance?
 The presence of large fibers in solution is unfavorable thermodynamically.
@@ -273,15 +266,15 @@ crowding can act as a _sensitive form of biochemical regulation_.
 
 # Thanks, you.
 
-<br>
 
-Laboratory of Biochemistry and Genetics
+[Laboratory of Biochemistry and Genetics](http://www.niddk.nih.gov/research-funding/at-niddk/labs-branches/LBG/Pages/about.aspx)
 Physical Biochemistry Section
 !(images/people/minton.jpg) <<height:225>> Allen Minton 
 !(images/people/di.jpg) <<height:225>> Di Wu 
 !(images/people/travis.png) <<height:225>> Travis Hoppe
 
-&& Support provided by the Intramural Research Division of the NIDDK, NIH.
+
+&& Support provided by the Intramural Research Division of the [NIDDK](http://www.niddk.nih.gov/Pages/default.aspx), [NIH](http://www.nih.gov/).
 
 
 
