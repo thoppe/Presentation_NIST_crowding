@@ -27,10 +27,10 @@ clean:
 	rm -rvf index.html
 
 push:
-	git status
 	git add index.html Makefile
 	git add $(target)
 	git add *.md
+	git status
 	git commit -a
 	git push
 

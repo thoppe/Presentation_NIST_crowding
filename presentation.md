@@ -18,7 +18,7 @@ NIH, NIDDK, LBG
 
 !(images/ww_fold.m4v)<<transparent;height:400px>> Folding
 !(images/example_dimer.png)<<transparent;height:400px>> Binding, dimerization 
-!(images/example_linear_agg.png)<<transparent;height:400px>> Aggregation, Fibril formation
+!(images/abeta.png)<<transparent;height:400px>> Aggregation, Fibril formation
 
 
 ====* !(images/zimmer_crowding.jpg)
@@ -28,7 +28,7 @@ NIH, NIDDK, LBG
 
 !(images/example_ww.png)<<transparent;height:350px>>
 !(images/example_dimer.png)<<transparent;height:350px>> 
-!(images/example_linear_agg.png)<<transparent;height:350px>> 
+!(images/abeta.png)<<transparent;height:400px>>
 && <div style="color:white;text-shadow: 2px 2px #000000;"> Background image from Harvard University, XVIVO Scientific Animation</div>
 
 ====*
@@ -59,7 +59,7 @@ _(usually) repulsive nonspecific interactions with other soluble macromolecules_
 Direct observation of the enhancement of non-cooperative protein 
 self-assembly by macromolecular crowding$^\dagger$
 
-!(images/rivas_large2.jpg) <<height:400px;transparent>> Addition of Hb enhances fiber formation of FtsZ
+!(images/rivas_large2.jpg) <<height:400px;transparent>> Hemoglobin (Hb) enhances fiber formation of FtsZ
 !(images/crowding_binding_sch.jpeg) <<height:350px;transparent>>
 
 
@@ -72,6 +72,7 @@ of apoC-II as a function of Dextran T10 concentration$^\dagger$
 !(images/hatters_F2.large.jpg) <<height:300px;transparent>> Turbidity
 !(images/hatters_F3.large.jpg) <<height:300px;transparent>> Non-aggregated protein
 !(images/hatters_F5.large.jpg) <<height:300px;transparent>> Thioflavin-T binding
+
 
 && $^\dagger$[JBC 277(7824-7830), Hatters, Minton, Howlett](http://www.jbc.org/content/277/10/7824.short)
 ====*
